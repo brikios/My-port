@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+section
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('image/wal.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+li 
+{
+    margin: 20px;
+    color: #fff;
+    border: solid 1px transparent;
+ 
+    
+}
+li a{
+    text-decoration: none;
+    color: #fff ;
+    border: solid 1px transparent;
+    padding: 5px 15px;
+}
+li a:hover
+{
+    background-color: #fff;
+    color: #000;
+    transition: 0.6s ease;
+}
+.mid
+{
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+
+.mid h1
+{
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+.mid h2
+{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.active a
+{
+    background-color: #fff;
+    color: #000;
+}
+.s
+{
+    border: 0px;
+    background-color: rgb(67, 85, 243);
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+.mid a{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff ;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  .mid a span{
+    position: relative;
+    z-index: 1;
+  }
+  
+  .mid a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(67, 85, 243);
+    transition:  0.35s;
+  }
+  
+  .mid a:hover{
+    color: #fff;
+  
+  }
+  
+  .mid a:hover:after{
+    width: 100%;
+  }
+
+.all
+{
+    background: url('image/Sans\ titre.png');
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1px;
+}
+.cont
+{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+.cont h1
+{
+    color:rgb(67, 85, 243);
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 4rem;
+}
+.cont h2
+{
+    color: #777;
+    font-size: 2rem;
+    font-weight: 400;
+ 
+}
+.image
+{
+    
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+.slam{
+    font-size: 2rem;
+    color:  #fff;
+    line-height: 5rem;
+    
+}
+.sights 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.sights .box 
+{
+    position: relative;
+    min-width: 350px;
+    height: 480px;
+    background: rgb(67, 85, 243);
+    transition: 0.5s;
+    margin: 10px;
+  
+}
+.sights:hover .box 
+{
+    opacity: 0.2;
+}
+.sights .box:hover
+{
+    opacity: 1;
+}
+.sights .box .imgbox
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.sights .box .content
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sights .box .content h2 
+{
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.contact
+{
+   
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(image/contact.jpg);
+    background-size: cover;
+}
+.contact .con
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .con h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .con p
+{
+    font-weight: 300;
+    color: #fff;
+}
+.contact p
+{
+    color: #fff;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px ;
+}
+.container .contactinfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .bo 
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .bo .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .bo .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .bo .text h3
+{
+    font-weight: 500;
+    color:rgb(67, 85, 243);
+}
+.contactform
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding:10px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox .submit
+{
+    width: 100px;
+    background-color:rgb(67, 85, 243);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
